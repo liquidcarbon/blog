@@ -1,0 +1,109 @@
+<svg width="450" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  style="background-color:#333; box-shadow:inset 0px 0px 0px 2px #cc0;">
+  <defs>
+    <!-- everything starts with a single bond -->
+    <line id="bond" x1="0" y1="0" x2="60" y2="0" />
+    
+    <g id="doubleBond">
+      <use href="#bond" y="-6" />
+      <use href="#bond" y="6" />
+    </g>
+
+    <g id="propene">
+      <use href="#bond" y="12" transform="translate(6), scale(0.9,1)" />
+      <use href="#bond" y="0" transform="rotate(120)" />
+      <use href="#bond" y="0" />
+      <circle cx="0" cy="0" r="0.01" />
+    </g>
+    
+    <g id="tripleBond">
+      <use href="#bond" y="-9" />
+      <use href="#bond" y="0" />
+      <use href="#bond" y="9" />
+    </g>
+
+    <g id="kekuleBond" stroke-linecap="round">
+      <use href="#bond" x1="51.962" y1="-30" x2="51.962" y2="30" />
+    </g>
+    
+    <g id="kekule" stroke-linecap="round">
+      <use href="#bond" transform="rotate(0)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(120)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(240)" x="-30" y="51.962" />
+    </g>
+    
+    <g id="c5" stroke-linecap="round">
+      <use href="#bond" transform="rotate(0)" x="-30" y="41.291" />
+      <use href="#bond" transform="rotate(72)" x="-30" y="41.291" />
+      <use href="#bond" transform="rotate(144)" x="-30" y="41.291" />
+      <use href="#bond" transform="rotate(216)" x="-30" y="41.291" />
+      <use href="#bond" transform="rotate(288)" x="-30" y="41.291" />
+    </g>
+    
+    <g id="c6" stroke-linecap="round">
+      <use href="#bond" transform="rotate(0)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(60)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(120)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(180)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(240)" x="-30" y="51.962" />
+      <use href="#bond" transform="rotate(300)" x="-30" y="51.962" />
+    </g>
+    <filter id="black-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
+        <feFlood result="flood" flood-color="#110011" flood-opacity="1"></feFlood>
+        <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
+        <feGaussianBlur in="dilated" result="blurred" stdDeviation="7"></feGaussianBlur>
+        <feMerge>
+            <feMergeNode in="blurred"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+    </filter>
+  </defs>
+
+  <g id="grid" stroke="azure" stroke-width="0.2">
+    <line x1="0" y1="120" x2="900" y2="120" />
+    <line x1="0" y1="240" x2="900" y2="240" />
+    <line x1="0" y1="360" x2="900" y2="360" />
+    <line x1="120" y1="0" x2="120" y2="900" />
+    <line x1="240" y1="0" x2="240" y2="900" />
+    <line x1="360" y1="0" x2="360" y2="900" />
+    <line x1="480" y1="0" x2="480" y2="900" />
+    <line x1="600" y1="0" x2="600" y2="900" />
+  </g>
+
+  <g id="naphthalene" stroke-width="5" stroke="#e2e4e5" transform="translate(240,120) scale(1.25)">
+    <g style="filter:url(#black-glow)">
+      <use href="#c6" transform="translate(-51.962) rotate(30)" />
+      <use href="#c6" transform="translate(51.962) rotate(30)" />
+    </g>
+    <g id="kekule1" stroke-linecap="round" stroke-width="6">
+      <animate attributeName="stroke-opacity" values="0;0;1;1;1;1;0;0" dur="4s" repeatCount="indefinite" />
+      <g transform="translate(-51.962)">
+        <use href="#bond" transform="rotate(30) scale(0.8)" x="-30" y="51.962" />
+        <use href="#bond" transform="rotate(150) scale(0.8)" x="-30" y="51.962" />
+      </g>
+      <g transform="translate(51.962)">
+        <use href="#bond" transform="rotate(30) scale(0.8)" x="-30" y="51.962" />
+        <use href="#bond" transform="rotate(150) scale(0.8)" x="-30" y="51.962" />
+        <use href="#bond" transform="rotate(270) scale(0.8)" x="-30" y="51.962" />
+      </g>
+    </g>
+    <g id="kekule2" stroke-linecap="round" stroke-width="6">
+      <animate attributeName="stroke-opacity" values="1;1;0;0;0;0;1;1" dur="4s" repeatCount="indefinite" />
+      <g transform="translate(-51.962)">
+        <use href="#bond" transform="rotate(-30) scale(0.8)" x="-30" y="51.962" />
+        <use href="#bond" transform="rotate(-150) scale(0.8)" x="-30" y="51.962" />
+        <use href="#bond" transform="rotate(-270) scale(0.8)" x="-30" y="51.962" />
+      </g>
+      <g transform="translate(51.962)">
+        <use href="#bond" transform="rotate(-30) scale(0.8)" x="-30" y="51.962" />
+        <use href="#bond" transform="rotate(-150) scale(0.8)" x="-30" y="51.962" />
+      </g>
+    </g>
+<!--
+    <text x="0" y="100" font-family="Verdana" font-size="2.5em" text-anchor="middle" stroke-width="1">
+        naphthalene
+    </text>
+-->
+  </g>
+</svg>

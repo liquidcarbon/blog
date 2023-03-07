@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "There’s antimony, arsenic, aluminum, selenium."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Million Little Monomers",
+    "section": "",
+    "text": "Elements of Surprise\n\n\nAnd some polypropylene\n\n\n\n\nHello, World\n\n\nTables\n\n\nBokeh\n\n\n\n\nSomething else to get started.\n\n\n\n\n\n\nFeb 3, 2022\n\n\nLiqC\n\n\n\n\n\n\n  \n\n\n\n\nPolyethylene\n\n\nAnd a small periodic table\n\n\n\n\nHello, World\n\n\nTables\n\n\n\n\nSomething to get started.\n\n\n\n\n\n\nFeb 2, 2022\n\n\nLiqC\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/23/elements-of-surprise/index.html",
+    "href": "posts/23/elements-of-surprise/index.html",
+    "title": "Elements of Surprise",
+    "section": "",
+    "text": "A surprising periodic table of elements.\n\n\nShow the code\ndef elements_of_surprise():\n    \"\"\"Adapted from https://docs.bokeh.org/en/latest/docs/gallery/periodic.html\"\"\"\n    \n    from bokeh.sampledata.periodic_table import elements\n    df = elements.copy()\n\n    # element of surprise\n    df[[\"name\",\"symbol\"]] = df[[\"name\",\"symbol\"]].sample(frac=1).values\n\n    # plotting\n    from bokeh.embed import file_html\n    from bokeh.plotting import figure\n    from bokeh.resources import CDN\n    from bokeh.transform import dodge, factor_cmap\n    from IPython.display import HTML\n\n    periods = [\"I\", \"II\", \"III\", \"IV\", \"V\", \"VI\", \"VII\"]\n    groups = [str(x) for x in range(1, 19)]\n\n    df = elements.copy()\n\n    #element of surprise\n    df[[\"name\",\"symbol\"]] = df[[\"name\",\"symbol\"]].sample(frac=1).values\n\n    df[\"atomic mass\"] = df[\"atomic mass\"].astype(str).apply(lambda x: x[:8])\n    df[\"group\"] = df[\"group\"].astype(str)\n    df[\"period\"] = [periods[x-1] for x in df.period]\n    df = df[df.group != \"-\"]\n\n    cmap = {\n        \"alkali metal\"         : \"#a6cee3\",\n        \"alkaline earth metal\" : \"#1f78b4\",\n        \"metal\"                : \"#d93b43\",\n        \"halogen\"              : \"#999d9a\",\n        \"metalloid\"            : \"#e08d49\",\n        \"noble gas\"            : \"#eaeaea\",\n        \"nonmetal\"             : \"#f1d4Af\",\n        \"transition metal\"     : \"#599d7A\",\n    }\n\n    TOOLTIPS = [\n        (\"Name\", \"@name\"),\n        (\"Atomic number\", \"@{atomic number}\"),\n        (\"Atomic mass\", \"@{atomic mass}\"),\n        (\"Type\", \"@metal\"),\n        (\"CPK color\", \"$color[hex, swatch]:CPK\"),\n        (\"Electronic configuration\", \"@{electronic configuration}\"),\n    ]\n\n    p = figure(title=\"Periodic Table\", width=1200, height=500,\n            x_range=groups, y_range=list(reversed(periods)),\n            tools=\"hover\", toolbar_location=None, tooltips=TOOLTIPS)\n\n    r = p.rect(\"group\", \"period\", 0.95, 0.95, source=df, fill_alpha=0.6, legend_field=\"metal\",\n            color=factor_cmap('metal', palette=list(cmap.values()), factors=list(cmap.keys())))\n\n    text_props = dict(source=df, text_align=\"left\", text_baseline=\"middle\")\n\n    x = dodge(\"group\", -0.4, range=p.x_range)\n\n    p.text(x=x, y=dodge(\"period\", 0.05, range=p.y_range), text=\"symbol\",\n        text_font_size=\"18px\", text_font_style=\"bold\", **text_props)\n\n    p.text(x=x, y=dodge(\"period\", 0.3, range=p.y_range), text=\"atomic number\",\n        text_font_size=\"14px\", **text_props)\n\n    p.text(x=x, y=dodge(\"period\", -0.35, range=p.y_range), text=\"name\",\n        text_font_size=\"10px\", **text_props)\n\n    p.text(x=x, y=dodge(\"period\", -0.2, range=p.y_range), text=\"atomic mass\",\n        text_font_size=\"10px\", **text_props)\n\n    p.outline_line_color = None\n    p.grid.grid_line_color = None\n    p.axis.axis_line_color = None\n    p.axis.major_tick_line_color = None\n    p.axis.major_label_standoff = 0\n    p.legend.orientation = \"horizontal\"\n    p.legend.location =\"top_center\"\n    p.hover.renderers = [r] # only hover element boxes\n\n    html = file_html(p, CDN, \"Periodic Table\")\n    return HTML(html)\n\n\n\nelements_of_surprise()\n\n\n\n\n  \n    \n    Periodic Table\n\n    \n    \n  \n  \n    \n  \n    \n    \n  \n\n\n\n\n\n\nCH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2 CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2 CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2 CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2 CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2 CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2 CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2CH(CH3)CH2\n\n\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 42 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r, 'r-')\nax.set_rticks([0, 1, 2])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "posts/23/polyethylene/index.html",
+    "href": "posts/23/polyethylene/index.html",
+    "title": "Polyethylene",
+    "section": "",
+    "text": "CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2\n\n\n| Period  | Group 1 | Group 2 | Group 17 | Group 18 |\n|---------|:--------|--------:|:--------:|:--------:|\n| 1       | H       |         |          | He       |\n| 2       | Li      | Be      | F        | Ne       |"
+  }
+]
