@@ -1,0 +1,33 @@
+---
+title: Polyethylene
+subtitle: And a small periodic table
+description: |
+  Something to get started.
+categories:
+  - Hello, World
+  - Tables
+author: LiqC
+date: "02/02/2022"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ethylene-CRC-MW-dimensions-2D.png/320px-Ethylene-CRC-MW-dimensions-2D.png"
+image-alt: "Not an image"
+toc: true
+---
+
+# Polyethylene
+
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~CH~2~
+
+## Small but periodic
+
+```markdown
+| Period  | Group 1 | Group 2 | Group 17 | Group 18 |
+|---------|:--------|--------:|:--------:|:--------:|
+| 1       | H       |         |          | He       |
+| 2       | Li      | Be      | F        | Ne       |
+```

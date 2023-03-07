@@ -1,0 +1,147 @@
+---
+title: Elements of Surprise
+subtitle: And some polypropylene
+description: |
+  Something else to get started.
+categories:
+  - Hello, World
+  - Tables
+  - Bokeh
+author: LiqC
+date: "02/03/2022"
+execute:
+  cache: false
+  freeze: true
+image: elem-of-sur.png
+image-alt: "Elements of Sur"
+toc: true
+jupyter: python3
+---
+
+# Element of Surprise
+A surprising periodic table of elements.
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+def elements_of_surprise():
+    """Adapted from https://docs.bokeh.org/en/latest/docs/gallery/periodic.html"""
+    
+    from bokeh.sampledata.periodic_table import elements
+    df = elements.copy()
+
+    # element of surprise
+    df[["name","symbol"]] = df[["name","symbol"]].sample(frac=1).values
+
+    # plotting
+    from bokeh.embed import file_html
+    from bokeh.plotting import figure
+    from bokeh.resources import CDN
+    from bokeh.transform import dodge, factor_cmap
+    from IPython.display import HTML
+
+    periods = ["I", "II", "III", "IV", "V", "VI", "VII"]
+    groups = [str(x) for x in range(1, 19)]
+
+    df = elements.copy()
+
+    #element of surprise
+    df[["name","symbol"]] = df[["name","symbol"]].sample(frac=1).values
+
+    df["atomic mass"] = df["atomic mass"].astype(str).apply(lambda x: x[:8])
+    df["group"] = df["group"].astype(str)
+    df["period"] = [periods[x-1] for x in df.period]
+    df = df[df.group != "-"]
+
+    cmap = {
+        "alkali metal"         : "#a6cee3",
+        "alkaline earth metal" : "#1f78b4",
+        "metal"                : "#d93b43",
+        "halogen"              : "#999d9a",
+        "metalloid"            : "#e08d49",
+        "noble gas"            : "#eaeaea",
+        "nonmetal"             : "#f1d4Af",
+        "transition metal"     : "#599d7A",
+    }
+
+    TOOLTIPS = [
+        ("Name", "@name"),
+        ("Atomic number", "@{atomic number}"),
+        ("Atomic mass", "@{atomic mass}"),
+        ("Type", "@metal"),
+        ("CPK color", "$color[hex, swatch]:CPK"),
+        ("Electronic configuration", "@{electronic configuration}"),
+    ]
+
+    p = figure(title="Periodic Table", width=1200, height=500,
+            x_range=groups, y_range=list(reversed(periods)),
+            tools="hover", toolbar_location=None, tooltips=TOOLTIPS)
+
+    r = p.rect("group", "period", 0.95, 0.95, source=df, fill_alpha=0.6, legend_field="metal",
+            color=factor_cmap('metal', palette=list(cmap.values()), factors=list(cmap.keys())))
+
+    text_props = dict(source=df, text_align="left", text_baseline="middle")
+
+    x = dodge("group", -0.4, range=p.x_range)
+
+    p.text(x=x, y=dodge("period", 0.05, range=p.y_range), text="symbol",
+        text_font_size="18px", text_font_style="bold", **text_props)
+
+    p.text(x=x, y=dodge("period", 0.3, range=p.y_range), text="atomic number",
+        text_font_size="14px", **text_props)
+
+    p.text(x=x, y=dodge("period", -0.35, range=p.y_range), text="name",
+        text_font_size="10px", **text_props)
+
+    p.text(x=x, y=dodge("period", -0.2, range=p.y_range), text="atomic mass",
+        text_font_size="10px", **text_props)
+
+    p.outline_line_color = None
+    p.grid.grid_line_color = None
+    p.axis.axis_line_color = None
+    p.axis.major_tick_line_color = None
+    p.axis.major_label_standoff = 0
+    p.legend.orientation = "horizontal"
+    p.legend.location ="top_center"
+    p.hover.renderers = [r] # only hover element boxes
+
+    html = file_html(p, CDN, "Periodic Table")
+    return HTML(html)
+```
+
+```{python}
+#| column: screen-inset-right
+elements_of_surprise()
+```
+
+---
+
+## Polypropylene
+
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+
+## Polymerplotlib
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 42 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r, 'r-')
+ax.set_rticks([0, 1, 2])
+ax.grid(True)
+plt.show()
+```

@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "A Million Little Monomers"
+  navbar:
+    title: false
+    collapse-below: lg
+    right:
+      - text: Home
+        href: index.html
+      - about.qmd
+      - icon: github
+        href: https://github.com/liquidcarbon
+      - icon: linkedin
+        href: https://www.linkedin.com/in/alekis/
+format:
+  html:
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    theme:
+      darkly
+    css: assets/css/styles.css
+    toc: true
