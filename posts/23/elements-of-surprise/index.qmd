@@ -8,6 +8,9 @@ categories:
   - Tables
   - Bokeh
 author: LiqC
+comments:
+  giscus: 
+    repo: liquidcarbon/blog
 date: "02/03/2022"
 execute:
   cache: false
