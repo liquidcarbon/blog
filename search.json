@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "A Million Little Monomers",
     "section": "",
-    "text": "Elements of Surprise\n\n\nAnd some polypropylene\n\n\n\n\nHello, World\n\n\nTables\n\n\nBokeh\n\n\n\n\nSomething else to get started.\n\n\n\n\n\n\nFeb 3, 2022\n\n\nLiqC\n\n\n\n\n\n\n  \n\n\n\n\nPolyethylene\n\n\nAnd a small periodic table\n\n\n\n\nHello, World\n\n\nTables\n\n\n\n\nSomething to get started.\n\n\n\n\n\n\nFeb 2, 2022\n\n\nLiqC\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto\n\n\nWhat I was looking for\n\n\n\n\nHousekeeping\n\n\n\n\nSetup and tweaks to get comfortable.\n\n\n\n\n\n\nMar 8, 2023\n\n\nLiqC\n\n\n\n\n\n\n  \n\n\n\n\nElements of Surprise\n\n\nAnd some polypropylene\n\n\n\n\nHello, World\n\n\nTables\n\n\nBokeh\n\n\n\n\nSomething else to get started.\n\n\n\n\n\n\nFeb 3, 2022\n\n\nLiqC\n\n\n\n\n\n\n  \n\n\n\n\nPolyethylene\n\n\nAnd a small periodic table\n\n\n\n\nHello, World\n\n\nTables\n\n\n\n\nSomething to get started.\n\n\n\n\n\n\nFeb 2, 2022\n\n\nLiqC\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/23/elements-of-surprise/index.html",
@@ -26,5 +26,19 @@
     "title": "Polyethylene",
     "section": "",
     "text": "CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2 CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2CH2\n\n\n| Period  | Group 1 | Group 2 | Group 17 | Group 18 |\n|---------|:--------|--------:|:--------:|:--------:|\n| 1       | H       |         |          | He       |\n| 2       | Li      | Be      | F        | Ne       |"
+  },
+  {
+    "objectID": "posts/23/quarto-what-i-was-looking-for/index.html",
+    "href": "posts/23/quarto-what-i-was-looking-for/index.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "https://quarto.org/docs/output-formats/html-basics.html#self-contained"
+  },
+  {
+    "objectID": "posts/23/quarto-what-i-was-looking-for/index.html#iframes",
+    "href": "posts/23/quarto-what-i-was-looking-for/index.html#iframes",
+    "title": "Quarto",
+    "section": "Iframes!",
+    "text": "Iframes!\nBeautiful Publications\nPublish high-quality articles, reports, presentations, websites, and books in HTML, PDF, MS Word, ePub, and more. Use a single source document to target multiple formats.\nLearn more » Scientific Markdown\nPandoc markdown has excellent support for LaTeX equations and citations. Quarto adds extensions for cross-references, figure panels, callouts, advanced page layout, and more.\nLearn more »"
   }
 ]
