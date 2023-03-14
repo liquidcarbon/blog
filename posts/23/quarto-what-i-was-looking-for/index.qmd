@@ -1,0 +1,86 @@
+---
+title: "Quarto: Back to Blog"
+subtitle: Publication-Grade Technical Communication
+description: |
+  Context and path to adoption of the best
+  scientific and publishing system of today
+categories:
+  - Housekeeping
+  - Howto
+  - Quarto
+author: LiqC
+comments:
+  giscus:
+    input-position: top
+    mapping: pathname
+    repo: liquidcarbon/blog
+    theme: dark
+date: "2023-03-13T20:00"
+date-format: "ddd, MMM D YYYY HH:mm" 
+image: "back-in-blog.png"
+image-alt: "back in blog"
+toc: true
+---
+
+# Back in Blog
+
+Many moons ago, I had a LiveJournal blog about fun times in a chemistry lab.  It was my first attempt to put some thoughts together in a foreign language.  [Drawing molecules](https://liquidcarbon.livejournal.com/29611.html) and silly commentary on the science of the day with I-Can-Has-Cheeseburger-style illustrations was the name of the game.  Fast forward fifteen years... I became a data analyst/engineer/scientist, and a lot of my thoughts are in or near code (python and friends).  One thing did not change: I still enjoy drawing molecules.
+
+:::{.column-margin}
+![There will be molecules!](https://albondxyz.s3.amazonaws.com/animols/LSD.svg)
+:::
+
+Another thing that did not change: [Wordpress is still one of the most popular platforms](https://wedevs.com/blog/103311/top-brands-using-wordpress/) for just about everything on the web.  But see, I want my blog to run my shiny 2023 code.
+
+I've been looking for a solution that could serve as a platform and for my own thoughts, as well as something that could work as a knowledge management system in a corporate setting.  If you spent any time on tech teams, you know that writing documentation is one of the eternal pain points.  In data science, you often want to present your thoughts mixed together with code, most commonly in Jupyter notebooks.  You also want nicely styled page layout and code blocks, and some support for content management (screenshots, images, videos).  Over the years I've been a part of data science/engineering teams in biotech, healthcare, and telecom, I haven't seen a solution I liked.  Chances are, if I worked at Google, I'd embrace [markdown-driven publishing](https://www.doctave.com/blog/2021/09/07/how-google-twitter-and-spotify-build-culture-of-documentation.html) sooner.
+
+## The Fate of Notebooks
+
+Whether you like or hate Jupyter notebooks, you have to admit that they are **the** vehicle for innovation around data.  FastAI's Jeremy Howard has probably taken Jupyter notebooks [further than anyone](https://www.fast.ai/posts/2019-11-27-nbdev.html): the entire [20K-stars deep learning library](https://github.com/fastai/fastai) and the printed book that goes along with it were both created entirely in notebooks.  He's a fan of scientific journaling, the habit of documenting your thought process, and I like the idea as well.  Writing in interactive notebooks allows your code and your thought process to coexist, so you can communicate to others and your future self not just what you did but why you did it.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9Q6sLbz37gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+> Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.[^1]
+
+Of course, problems begin what you're attempting to build on somebody's work in a notebook (environments), or put them on github, or build some kind of knowledge or analytics repository from notebooks.  You have to make compromises.
+
+## Enter Quarto
+
+I first learned about Quarto from Jeremy Howard's I Like Notebooks talk.  From there I learned about FastAI's [nbdev](https://nbdev.fast.ai/) and its documentation framework called fastpages.  Around the same time, the creators of RStudio and RMarkdown, the company founded by JJ Allaire that is now known as Posit, released Quarto.  The FastAI team recognized that Quarto supersedes what they were able to build to date, and decided to abandon their work and endorse Quarto.  The fact that prominent practitioners from the R and Python worlds converged on one vehicle for insight delivery was enough for me to settle on Quarto.
+
+> One of the main ideas of Quarto is to help scientific communication take better advantage of the web while still not losing the focus on print.  Another piece, which was a huge focus of the R community, is reproducibility.  All your work should be in a computational document that runs top to bottom.  Your figures, tables, and results are reproducibly made by code.  Accurate, trustworthy computing of scientific results is the prime directive.[^2]
+
+## Analysis Safari
+
+The output of browser-native data exploration should end up in a browser-native habitat.  Viewed as an HTML page that is decorated with care and attention to detail, your code and narrative are experienced in a very similar way to how the author first created it.  With syntax highlighting, interactive plots, and codefolding, the output appeals to a range of audiences.  Some may choose to read the TLDR and browse the figures.  Some will play with the charts.  Some will examine the code.  The experience reminds me of a safari: the wildlife is as wild as it gets, and the visitor has lots of choices for how to interact with it.  If some of the native functionality is removed, your notebook may be a zoo, or even in a circus.  Live notebooks solutions (Binder, JupyterHub) remain slow and fragile.  Standalone notebook files require you to fire up your own Jupyter (your execs won't be doing that).  Github-rendered notebooks lose output, and often fail to show up at all.  There's a fair chance that Github will eventually implement Quarto for showing notebooks.
+
+## Features abound!
+
+Here's a list of features I'm loving.  Quite far from discovering all of what Quarto has to offer.
+
+(@) Preview the rendered page, with livereload.
+(@) HTML output that does not suck.  You may have tried save a notebook as HTML, which is done with nbconvert, and learned how clunky it is.  Here, the conversion just works, looks great, and loads fast.  All the interactive charts remain interactive (Altair, [Bokeh](../elements-of-surprise/), Plotly all work).  The code blocks are easily portable, thanks to a `copy` button.
+(@) Options for [comments](https://quarto.org/docs/reference/projects/websites.html#comments).
+(@) [Publish](https://quarto.org/docs/publishing/) with one command to Github Pages or Quarto's own platform.
+(@) You can directly paste iframes code to embed special content (like the YouTube video above), giving you functionality similar to Notion.
+(@) Rich use of markdown.  Quarto's VSCode extension will even render the Quarto-native `.qmd` file as a notebook.
+(@) The ability to select different execution kernels (bring your own `requirements.txt` or `poetry.lock`).  Quarto allows you to select kernels, which are just JSON files pointed at the right interpreter.  Assuming you've got ipykernel in your package, run `python -m ipykernel install --user --name my_env` to link the `python` executable to `my_env` kernel; check `jupyter kernelspec list` to find the files and verify.
+(@) Option for self-contained HTML output files with all content, stylesheets, and scripts [embedded](https://quarto.org/docs/output-formats/html-basics.html#self-contained).
+(@) Choice of themes and layouts.
+(@) Bring your own CSS for extra customization.
+
+###
+::: {.column-margin .move-up-50pct}
+```css
+/* indent and justify */
+section > p {
+    text-indent: 1em;
+    text-align: justify;
+}
+```
+:::
+
+[^1]: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+[^2]: [Jeremy Howard + JJ Allaire two-way AMA](https://youtu.be/xxVVSxcjNQs?t=4610)
+
+

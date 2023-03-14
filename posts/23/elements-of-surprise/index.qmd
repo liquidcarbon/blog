@@ -9,8 +9,11 @@ categories:
   - Bokeh
 author: LiqC
 comments:
-  giscus: 
+  giscus:
+    input-position: top
+    mapping: pathname
     repo: liquidcarbon/blog
+    theme: dark
 date: "02/03/2022"
 execute:
   cache: false

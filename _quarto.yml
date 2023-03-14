@@ -15,6 +15,13 @@ website:
         href: https://github.com/liquidcarbon
       - icon: linkedin
         href: https://www.linkedin.com/in/alekis/
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url: https://github.com/liquidcarbon/blog/tree/main/posts
+
 format:
   html:
     grid:
