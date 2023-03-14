@@ -42,7 +42,7 @@ Whether you like or hate Jupyter notebooks, you have to admit that they are **th
 
 > Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.[^1]
 
-Of course, problems begin what you're attempting to build on somebody's work in a notebook (environments), or put them on github, or build some kind of knowledge or analytics repository from notebooks.  You have to make compromises.
+Of course, problems begin when you attempt to build on somebody's work in a notebook (environments 🤪), or check them into github, or build some kind of knowledge or analytics repository from notebooks.  You have to make compromises.
 
 ## Enter Quarto
 
@@ -72,7 +72,7 @@ Here's a list of features I'm loving.  Quite far from discovering all of what Qu
 ###
 ::: {.column-margin .move-up-50pct}
 ```css
-/* indent and justify */
+/* CSS to indent and justify */
 section > p {
     text-indent: 1em;
     text-align: justify;
@@ -82,5 +82,3 @@ section > p {
 
 [^1]: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
 [^2]: [Jeremy Howard + JJ Allaire two-way AMA](https://youtu.be/xxVVSxcjNQs?t=4610)
-
-
