@@ -1,5 +1,5 @@
 ---
-title: "Quarto: Back to Blog"
+title: "Quarto: Back in Blog"
 subtitle: Publication-Grade Technical Communication
 description: |
   Context and path to adoption of the best
