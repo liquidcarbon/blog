@@ -30,13 +30,15 @@ The result? Preexisting beliefs, biases, and incentives are reinforced. Though i
 [Bart De Langhe](https://www.linkedin.com/in/ACoAAAC5V-sBm0kfD0NVZz6VvRd0ExwXysD90Kk?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BOzao%2F1n9SDunTQ1IG%2Fo1%2Fg%3D%3D) and [Stefano Puntoni](https://www.linkedin.com/in/ACoAAAGJ8P0B0hihAkYDLt58VAKlMaSO_Az4kqw?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BOzao%2F1n9SDunTQ1IG%2Fo1%2Fg%3D%3D) call for replacing data-driven decision-making with decision-driven analytics. It starts from a proper definition of the decision that needs to be made and the data that is needed to support or reject that decision.
 
 To shift to decision-driven data analytics, a company should start by identifying the business’s key decisions and the people who make them, and finding data for a purpose. Leaders can take three steps:
-(@) form a narrow consideration set of alternative courses of action,
-(@) identify or gather the data needed to figure out which course of action is best
-(@) choose the best course of action.
+
+(@) Form a narrow consideration set of alternative courses of action,
+(@) Identify or gather the data needed to figure out which course of action is best
+(@) Choose the best course of action.
 
 As you retrospect on the decision that was made, this process can help separate the quality of the outcome from the quality of the decision.
 
-Quoting from the article: "Decision-driven data analytics emphasizes the importance of asking questions. This approach draws attention to unknowns and the value of additional data collection and analysis. Companies and leaders who take this approach benefit by ensuring that analytics initiatives are tied to action, are focused on answering the questions that matter, and challenge rather than bolster executives’ beliefs about how the world works."
+> "Decision-driven data analytics emphasizes the importance of asking questions. This approach draws attention to unknowns and the value of additional data collection and analysis. Companies and leaders who take this approach benefit by ensuring that analytics initiatives are tied to action, are focused on answering the questions that matter, and challenge rather than bolster executives’ beliefs about how the world works."
 
 Read the [paper](https://lnkd.in/gsHukiHG), watch the [interview with MIT Management Review](https://www.youtube.com/watch?v=zBQpvkN9qWk).  
+
 Also published on: [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7041166301540605952/)
