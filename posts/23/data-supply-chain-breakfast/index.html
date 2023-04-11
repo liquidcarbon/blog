@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="LiqC">
+<meta name="description" content="Generating insights from raw data and delivering insights to decision makers are two critical stages for creating value from data.">
 
-<title>A Million Little Monomers</title>
+<title>A Million Little Monomers - Data Supply Chain</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,40 +60,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="../../../assets/css/styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -109,11 +78,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -137,14 +106,52 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">A Million Little Monomers</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data Supply Chain</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Data Supply Chain</h1>
+            <p class="subtitle lead">Introduction, definitions, and a breakfast insight</p>
+                  <div>
+        <div class="description">
+          <p>Generating insights from raw data and delivering insights to decision makers are two critical stages for creating value from data.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Data Supply Chain</div>
+                <div class="quarto-category">Insight Delivery</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>LiqC </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Tue, Apr 11 2023 11:00</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
         <div class="sidebar-tools-main">
@@ -164,235 +171,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Bokeh">Bokeh <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Culture">Data Culture <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Strategy">Data Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Supply Chain">Data Supply Chain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Hello, World">Hello, World <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Housekeeping">Housekeeping <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Howto">Howto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Insight Delivery">Insight Delivery <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tables">Tables <span class="quarto-category-count">(2)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">A Million Little Monomers</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p><img src="assets/images/naphthalene.svg" class="img-fluid" alt="Naphthalene"></p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Data Supply Chain,Insight Delivery" data-listing-date-sort="1681232400000" data-listing-file-modified-sort="1681233341298" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<div class="thumbnail">
-<p><a href="./posts/23/data-supply-chain-breakfast/index.html"> <img src="./posts/23/data-supply-chain-breakfast/DSC.png" class="thumbnail-image" alt="Data Supply Chain"> </a></p>
+<p>What if I told you that there is no data science?</p>
+<p>Or data analytics or engineering?</p>
+<p>Just logistics.</p>
+<p>All these lines of work are in service of data supply chain.</p>
+<p>Supply chains haven’t been on our minds much, until the COVID pandemic brought along issues with getting all kinds of stuff we take for granted. We’ve learned to associate supply chains with the movement of physical goods. Indeed, it’s been the case for millenia: when people found something valuable, others found ways to get it. Did you notice a bit of an implied data exchange in the previous sentence? Merchants need a way to tell buyers what they have, and collect the data on what they need. Data has always played a role in supply chains. Sometimes just this data is precious. In the spring of 2020 I was working in a hospital supply chain, and “WHO HAS MASKS?” was a multi-million dollar question.</p>
+<p>Let’s take a closer look at supply chains built around data, and define the data supply chain while we’re at it. <strong>Data supply chain is a sequence of sociotechnical processes for building and distributing data products</strong>. There are two major steps in a data supply chain. We collect, enhance, and analyze data to derive insights. We use insights to make decisions. Much like in the physical goods world, smart use of technology confers a competitive advantage.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="DSC.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Data Supply Chain: a sequence of sociotechnical processes for building and distributing data products</figcaption><p></p>
+</figure>
 </div>
-<div class="body">
-<a href="./posts/23/data-supply-chain-breakfast/index.html">
-<h3 class="no-anchor listing-title">
-Data Supply Chain
-</h3>
-<div class="listing-subtitle">
-Introduction, definitions, and a breakfast insight
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Data Supply Chain'); return false;">
-Data Supply Chain
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Insight Delivery'); return false;">
-Insight Delivery
-</div>
-</div>
-<a href="./posts/23/data-supply-chain-breakfast/index.html">
-<div class="listing-description">
-<p>Generating insights from raw data and delivering insights to decision makers are two critical stages for creating value from data.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/23/data-supply-chain-breakfast/index.html">
-<div class="listing-date">
-Apr 11, 2023
-</div>
-<div class="listing-author">
-LiqC
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Data Culture,Data Strategy" data-listing-date-sort="1678809600000" data-listing-file-modified-sort="1678805001472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/23/decision-driven-analytics/index.html"> <img src="./posts/23/decision-driven-analytics/decision-forest.jpg" class="thumbnail-image" alt="decisions"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/23/decision-driven-analytics/index.html">
-<h3 class="no-anchor listing-title">
-Decision-Driven Analyics
-</h3>
-<div class="listing-subtitle">
-Looking for a purpose for your data? Think decisions first.
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Data Culture'); return false;">
-Data Culture
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Data Strategy'); return false;">
-Data Strategy
-</div>
-</div>
-<a href="./posts/23/decision-driven-analytics/index.html">
-<div class="listing-description">
-<p>Are you turning to data to confirm your beliefs, or are you truly exploring the possibilities?</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/23/decision-driven-analytics/index.html">
-<div class="listing-date">
-Mar 14, 2023
-</div>
-<div class="listing-author">
-LiqC
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Housekeeping,Howto,Quarto" data-listing-date-sort="1678759200000" data-listing-file-modified-sort="1678782779121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
-<div class="thumbnail">
-<p><a href="./posts/23/quarto-back-in-blog/index.html"> <img src="./posts/23/quarto-back-in-blog/back-in-blog.png" class="thumbnail-image" alt="back in blog"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/23/quarto-back-in-blog/index.html">
-<h3 class="no-anchor listing-title">
-Quarto: Back in Blog
-</h3>
-<div class="listing-subtitle">
-Publication-Grade Technical Communication
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Housekeeping'); return false;">
-Housekeeping
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Howto'); return false;">
-Howto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/23/quarto-back-in-blog/index.html">
-<div class="listing-description">
-<p>Context and path to adoption of the best scientific and publishing system of today</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/23/quarto-back-in-blog/index.html">
-<div class="listing-date">
-Mar 13, 2023
-</div>
-<div class="listing-author">
-LiqC
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Hello, World,Tables,Bokeh" data-listing-date-sort="1643871600000" data-listing-file-modified-sort="1678748731081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/23/elements-of-surprise/index.html"> <img src="./posts/23/elements-of-surprise/elem-of-sur.png" class="thumbnail-image" alt="Elements of Sur"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/23/elements-of-surprise/index.html">
-<h3 class="no-anchor listing-title">
-Elements of Surprise
-</h3>
-<div class="listing-subtitle">
-And some polypropylene
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Hello, World'); return false;">
-Hello, World
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tables'); return false;">
-Tables
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Bokeh'); return false;">
-Bokeh
-</div>
-</div>
-<a href="./posts/23/elements-of-surprise/index.html">
-<div class="listing-description">
-<p>Something else to get started.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/23/elements-of-surprise/index.html">
-<div class="listing-date">
-Feb 3, 2022
-</div>
-<div class="listing-author">
-LiqC
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Hello, World,Tables" data-listing-date-sort="1643785200000" data-listing-file-modified-sort="1678208869664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/23/polyethylene/index.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ethylene-CRC-MW-dimensions-2D.png/320px-Ethylene-CRC-MW-dimensions-2D.png" class="thumbnail-image" alt="Not an image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/23/polyethylene/index.html">
-<h3 class="no-anchor listing-title">
-Polyethylene
-</h3>
-<div class="listing-subtitle">
-And a small periodic table
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Hello, World'); return false;">
-Hello, World
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tables'); return false;">
-Tables
-</div>
-</div>
-<a href="./posts/23/polyethylene/index.html">
-<div class="listing-description">
-<p>Something to get started.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/23/polyethylene/index.html">
-<div class="listing-date">
-Feb 2, 2022
-</div>
-<div class="listing-author">
-LiqC
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<p>Fully human, as well as fully automated data supply chains are all around us. Upon collecting some data from your fridge and pantry, the insights, decisions, and actions that will make food appear on your table tonight will be mostly made by you (though this is changing). In contrast, your thermostat makes decisions to cool or heat your home all by itself, based on insights derived from processing data from temperature sensors. You can certainly find similar examples in organizations, but if you attempt to trace the lifecycle of some recent decisions, you might observe that the extent of human involvement increases along with product maturity. The specifics of how we handle the first step are mainly technical (think scientific instruments, data pipelines, databases, dashboards). The second step is a lot more about people (think meetings, presentations, publications).</p>
+<p>When we view the process of value creation from data from the lens of the data supply chain, it makes perfect sense why we care about data quality and governance, as well as technology required to process raw data. If you run a restaurant, it would be unwise to make breakfast from rotten eggs and rusty cookware. But you also need good servers to deliver the food and help the guests decide what to eat.</p>
+<p>How hard can it be to not bring rotten eggs to the kitchen?</p>
+<p>How hard can it be to “serve” an insight?</p>
+<p>Which of the two steps have you found more challenging in your work?</p>
+<p>#datasupplychain #insightdelivery #datastrategy</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -625,6 +432,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://giscus.app/client.js" data-repo="liquidcarbon/blog" data-repo-id="R_kgDOJGkWMQ" data-category="General" data-category-id="DIC_kwDOJGkWMc4CU2pN" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="dark" data-lang="en" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
