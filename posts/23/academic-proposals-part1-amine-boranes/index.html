@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.302">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="LiqC">
+<meta name="description" content="Preparation of water-stable amine–borane (RNH2•BH3) derivatives of peptides and proteins. Written by me in October 2015.">
+
+<title>A Million Little Monomers - Aqueous chemistry and applications of boron hydrides</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/liquidcarbon" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alekis/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Aqueous chemistry and applications of boron hydrides</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Aqueous chemistry and applications of boron hydrides</h1>
+            <p class="subtitle lead">Unpublished academic proposals, part 1</p>
+                  <div>
+        <div class="description">
+          <p>Preparation of water-stable amine–borane (RNH2•BH3) derivatives of peptides and proteins. Written by me in October 2015.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">chemistry</div>
+                <div class="quarto-category">research proposals</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>LiqC </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Wed, May 3 2023 11:00</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/liquidcarbon/blog/tree/main/posts">
+            Source Code
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aqueous-chemistry-and-biological-applications-of-boron-hydrides" id="toc-aqueous-chemistry-and-biological-applications-of-boron-hydrides" class="nav-link active" data-scroll-target="#aqueous-chemistry-and-biological-applications-of-boron-hydrides">Aqueous chemistry and biological applications of boron hydrides</a>
+  <ul class="collapse">
+  <li><a href="#comment" id="toc-comment" class="nav-link" data-scroll-target="#comment">Comment</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#p.s.-writing-with-quarto" id="toc-p.s.-writing-with-quarto" class="nav-link" data-scroll-target="#p.s.-writing-with-quarto">P.S. Writing with Quarto</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+<section id="aqueous-chemistry-and-biological-applications-of-boron-hydrides" class="level1 page-columns page-full">
+<h1>Aqueous chemistry and biological applications of boron hydrides</h1>
+<p>The research on borane (BH<sub>3</sub>) and its derivatives was recognized with two Nobel Prizes, awarded to William Lipscomb<span class="citation" data-cites="Lipscomb1977-boranes">(<a href="#ref-Lipscomb1977-boranes" role="doc-biblioref"><em>1</em></a>)</span> in 1976 and Herbert Brown<span class="citation" data-cites="Brown1980-organoboranes">(<a href="#ref-Brown1980-organoboranes" role="doc-biblioref"><em>2</em></a>)</span> in 1979. Boron hydrides are rarely used in water due to poor aqueous stability. Sodium borohydride (NaBH<sub>4</sub>), the most readily available BH<sub>3</sub> derivative, decomposes within seconds at neutral pH, producing aqua–borane (BH<sub>3</sub>•H<sub>2</sub>O) as a fleeting intermediate. Though the majority of aqua–borane proceeds to decompose to H<sub>2</sub> and boric acid, BH<sub>3</sub>•H<sub>2</sub>O is capable of reducing carbonyl groups and disulfides,<span class="citation" data-cites="Crestfield1963-borohydride-disulfides">(<a href="#ref-Crestfield1963-borohydride-disulfides" role="doc-biblioref"><em>3</em></a>)</span> and can be intercepted by amines even in water.<span class="citation" data-cites="Davis1962-amineboranes">(<a href="#ref-Davis1962-amineboranes" role="doc-biblioref"><em>4</em></a>)</span></p>
+<p>The goal of this proposal is to devise practical ways to trap borane (BH<sub>3</sub>) as water-stable<span class="citation" data-cites="Kelly1979-amineborane-hydrolysis">(<a href="#ref-Kelly1979-amineborane-hydrolysis" role="doc-biblioref"><em>5</em></a>)</span> amine–boranes (<strong>AB</strong>), e.g.&nbsp;lysine–borane Lys-ε-NH<sub>2</sub>•BH<sub>3</sub>. Presently, AB can only be prepared in aprotic solvents using strongly reducing BH<sub>3</sub>•SMe<sub>2</sub> or BH<sub>3</sub>•THF, with very limited substrate scope. Thus, the <strong>chemical space comprising borane derivatives of amino acids, peptides, and proteins is completely unexplored</strong>.</p>
+<p>I hypothesize that efficient borane transfer onto alkylamines can be accomplished using borane adducts of weakly basic azines (pyridines, pyrimidines, triazines) or azoles (imidazoles, pyrazoles, thiazoles). Ortho-substituents that create a hydrophobic environment for the lysine side chain should facilitate the transfer of borane to target acceptor, rather than to water, by either S<sub>N</sub>1 or S<sub>N</sub>2 mechanism<span class="citation" data-cites="Hawthorne1971-boron-substitution Muller1987-boron-substitution">(<a href="#ref-Hawthorne1971-boron-substitution" role="doc-biblioref"><em>6</em></a>, <a href="#ref-Muller1987-boron-substitution" role="doc-biblioref"><em>7</em></a>)</span> (<strong>Fig. 1</strong>). Similar hydrophobic pockets in histone methyltransferases enable lysine methylation by S-adenosylmethionine.<span class="citation" data-cites="Xiao2003-histone-methylation-mechanism">(<a href="#ref-Xiao2003-histone-methylation-mechanism" role="doc-biblioref"><em>8</em></a>)</span></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="fig1-BH3-donor.png" class="img-fluid" style="width:100.0%"></p>
+</div></div><p>Initial experiments with readily available pyridine–boranes and model amines, supported by quantum mechanical modeling, will lay the groundwork for the design of effective borane transfer reagents. With the synthetic method for transferring borane on biomolecules in hand, further applications of these elusive compounds can be envisioned. The addition of BH<sub>3</sub> (13.8 Daltons) is the lightest chemically feasible chemical modification of an amino group, short for isotope substitution. RNH<sub>2</sub>•BH<sub>3</sub> is isostructural with [RNH<sub>2</sub>CH<sub>3</sub>]+ but lacks the positive charge of the latter. AB may be useful for studying protein structure with <sup>11</sup>B NMR,<span class="citation" data-cites="Hermanek1992-b11-nmr">(<a href="#ref-Hermanek1992-b11-nmr" role="doc-biblioref"><em>9</em></a>)</span> boron neutron capture therapy,<span class="citation" data-cites="Moss2014-BNCT">(<a href="#ref-Moss2014-BNCT" role="doc-biblioref"><em>10</em></a>)</span> generating antioxidant hydrogen gas in acidic vesicles,<span class="citation" data-cites="Ohsawa2007-hydrogen-antioxidant">(<a href="#ref-Ohsawa2007-hydrogen-antioxidant" role="doc-biblioref"><em>11</em></a>)</span> and mimicking methylated lysines.<span class="citation" data-cites="Carlson2014-methylome">(<a href="#ref-Carlson2014-methylome" role="doc-biblioref"><em>12</em></a>)</span></p>
+<p>Rapid decomposition of NaBH<sub>4</sub> under physiological conditions is accompanied by evolution of a large volume of gaseous H<sub>2</sub> and reductive cleavage of biomolecules (proteins, glycans, lipids).<span class="citation" data-cites="Crestfield1963-borohydride-disulfides">(<a href="#ref-Crestfield1963-borohydride-disulfides" role="doc-biblioref"><em>3</em></a>)</span> I hypothesize that NaBH<sub>4</sub> can be formulated as hard-shelled<span class="citation" data-cites="Christian2013-nanoborohydride">(<a href="#ref-Christian2013-nanoborohydride" role="doc-biblioref"><em>13</em></a>)</span> <em>“nanozeppelins”</em> capable of direct and immune-mediated tumor lysis. The release of hydrogen gas from these nanozeppelins can be both triggered and visualized by ultrasound.<span class="citation" data-cites="Mason2011-therapeutic-ultrasound">(<a href="#ref-Mason2011-therapeutic-ultrasound" role="doc-biblioref"><em>14</em></a>)</span> Externally triggered, localized release of a chemically reactive precursor may cause massive damage to the vasculature, resulting in cauterization of the vessel, and death of the tumor due to impaired supply of oxygen and nutrients.<span class="citation" data-cites="Bock2011-antiangiogenesis">(<a href="#ref-Bock2011-antiangiogenesis" role="doc-biblioref"><em>15</em></a>)</span> Mechanochemical lysis of tumor cells can lead to immunogenic cell death, characterized by sustained activation of antigen-presenting cells and cytotoxic T cells,<span class="citation" data-cites="Kroemer2013-immunogenic-cell-death">(<a href="#ref-Kroemer2013-immunogenic-cell-death" role="doc-biblioref"><em>16</em></a>)</span> and may help patients lacking pre-existing antitumor immunity respond to immune checkpoint blockade therapy.<span class="citation" data-cites="Twyman-Saint2015-radiation-checkpoint">(<a href="#ref-Twyman-Saint2015-radiation-checkpoint" role="doc-biblioref"><em>17</em></a>)</span></p>
+<p>Potential funding sources: NIH (NCI, NIBIB, NIGMS); NSF (MCB, MSN, SYN); DoD; Bill and Melinda Gates Foundation (NaBH<sub>4</sub> vaccine is a cheap, broadly applicable intervention).</p>
+<section id="comment" class="level2">
+<h2 class="anchored" data-anchor-id="comment">Comment</h2>
+<p>This was the more outlandish of my proposals. It wasn’t based on my previous work, just on long-time fascination with boron chemistry, and some experiments with reversible reduction of GFP with borohydride<span class="citation" data-cites="Inouye1994-GFP-redox Tsien1998-GFP">(<a href="#ref-Inouye1994-GFP-redox" role="doc-biblioref"><em>18</em></a>, <a href="#ref-Tsien1998-GFP" role="doc-biblioref"><em>19</em></a>)</span>, which I played with for a bit because purified fluorescent proteins were around in Roger’s lab! Roger himself was quite interested in hydrogen peroxide sensors based on boronic acids, but they couldn’t compete on rates with HyPer and similar protein-based sensors.<span class="citation" data-cites="Meier2019-peroxide-sensors">(<a href="#ref-Meier2019-peroxide-sensors" role="doc-biblioref"><em>20</em></a>)</span></p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Lipscomb1977-boranes" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">W. N. Lipscomb, <a href="https://doi.org/10.1126/science.196.4294.1047">The boranes and their relatives.</a> <em>Science</em>. <strong>196</strong>, 1047–55 (1977).</div>
+</div>
+<div id="ref-Brown1980-organoboranes" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">H. C. Brown, <a href="https://doi.org/10.1126/science.210.4469.485">From little acorns to tall oaks: From boranes through organoboranes</a>. <em>Science</em>. <strong>210</strong>, 485–492 (1980).</div>
+</div>
+<div id="ref-Crestfield1963-borohydride-disulfides" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">A. M. Crestfield, S. Moore, W. H. Stein, <a href="https://www.ncbi.nlm.nih.gov/pubmed/14023808">The preparation and enzymatic hydrolysis of reduced and s-carboxymethylated proteins</a>. <em>J Biol Chem</em>. <strong>238</strong>, 622–627 (1963).</div>
+</div>
+<div id="ref-Davis1962-amineboranes" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">R. Earl. Davis, Edward. Bromels, C. L. Kibby, <a href="https://doi.org/10.1021/ja00865a001">Boron hydrides. III. Hydrolysis of sodium borohydride in aqueous solution</a>. <em>Journal of the American Chemical Society</em>. <strong>84</strong>, 885–892 (1962).</div>
+</div>
+<div id="ref-Kelly1979-amineborane-hydrolysis" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">H. C. Kelly, V. B. Marriott, <a href="https://doi.org/10.1021/ic50200a049">Reexamination of the mechanism of acid-catalyzed amine-borane hydrolysis. The hydrolysis of ammonia-borane</a>. <em>Inorganic Chemistry</em>. <strong>18</strong>, 2875–2878 (1979).</div>
+</div>
+<div id="ref-Hawthorne1971-boron-substitution" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">M. F. Hawthorne, D. E. Walmsley, W. L. Budde, <a href="https://doi.org/10.1021/ja00742a009">Nucleophilic substitution at tetrahedral boron. Trimethylamine-alkylborane and trimethylamine-arylborane substrates</a>. <em>Journal of the American Chemical Society</em>. <strong>93</strong>, 3150–3155 (1971).</div>
+</div>
+<div id="ref-Muller1987-boron-substitution" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">E. Muller, H.-B. Burgi, <a href="https://doi.org/10.1002/hlca.19870700303">Complexes of 2,2’,2”-nitrilotriphenol. Part 1. A study of bimolecular nucleophilic substitution at the boron atom</a>. <em>Helvetica Chimica Acta</em>. <strong>70</strong>, 499–510 (1987).</div>
+</div>
+<div id="ref-Xiao2003-histone-methylation-mechanism" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">B. Xiao, C. Jing, J. R. Wilson, P. A. Walker, N. Vasisht, G. Kelly, S. Howell, I. A. Taylor, G. M. Blackburn, S. J. Gamblin, <a href="https://doi.org/10.1038/nature01378">Structure and catalytic mechanism of the human histone methyltransferase SET7/9.</a> <em>Nature</em>. <strong>421</strong>, 652–6 (2003).</div>
+</div>
+<div id="ref-Hermanek1992-b11-nmr" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">S. Hermanek, <a href="https://doi.org/10.1021/cr00010a007">Boron-11 NMR spectra of boranes, main-group heteroboranes, and substituted derivatives. Factors influencing chemical shifts of skeletal atoms</a>. <em>Chemical Reviews</em>. <strong>92</strong>, 325–362 (1992).</div>
+</div>
+<div id="ref-Moss2014-BNCT" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">R. L. Moss, <a href="https://doi.org/10.1016/j.apradiso.2013.11.109">Critical review, with an optimistic outlook, on boron neutron capture therapy (BNCT).</a> <em>Applied radiation and isotopes : including data, instrumentation and methods for use in agriculture, industry and medicine</em>. <strong>88</strong>, 2–11 (2014).</div>
+</div>
+<div id="ref-Ohsawa2007-hydrogen-antioxidant" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">I. Ohsawa, M. Ishikawa, K. Takahashi, M. Watanabe, K. Nishimaki, K. Yamagata, K.-I. Katsura, Y. Katayama, S. Asoh, S. Ohta, <a href="https://doi.org/10.1038/nm1577">Hydrogen acts as a therapeutic antioxidant by selectively reducing cytotoxic oxygen radicals.</a> <em>Nature medicine</em>. <strong>13</strong>, 688–94 (2007).</div>
+</div>
+<div id="ref-Carlson2014-methylome" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">S. M. Carlson, O. Gozani, <a href="https://doi.org/10.1016/j.jmb.2014.04.024">Emerging technologies to map the protein methylome.</a> <em>Journal of molecular biology</em>. <strong>426</strong>, 3350–62 (2014).</div>
+</div>
+<div id="ref-Christian2013-nanoborohydride" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">M. Christian, K.-F. Aguey-Zinsou, <a href="https://doi.org/10.1039/C3CC42815J">Synthesis of core-shell NaBH4@m (m = co, cu, fe, ni, sn) nanoparticles leading to various morphologies and hydrogen storage properties</a>. <em>Chemical Communications</em>. <strong>49</strong>, 6794–6796 (2013).</div>
+</div>
+<div id="ref-Mason2011-therapeutic-ultrasound" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">T. J. Mason, <a href="https://doi.org/10.1016/j.ultsonch.2011.01.004">Therapeutic ultrasound an overview</a>. <em>Ultrasonics Sonochemistry</em>. <strong>18</strong>, 847–852 (2011).</div>
+</div>
+<div id="ref-Bock2011-antiangiogenesis" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">K. De Bock, M. Mazzone, P. Carmeliet, <a href="https://doi.org/10.1038/nrclinonc.2011.83">Antiangiogenic therapy, hypoxia, and metastasis: Risky liaisons, or not?</a> <em>Nature reviews. Clinical oncology</em>. <strong>8</strong>, 393–404 (2011).</div>
+</div>
+<div id="ref-Kroemer2013-immunogenic-cell-death" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">G. Kroemer, L. Galluzzi, O. Kepp, L. Zitvogel, <a href="https://doi.org/10.1146/annurev-immunol-032712-100008">Immunogenic cell death in cancer therapy</a>. <em>Annu Rev Immunol</em>. <strong>31</strong>, 51–72 (2013).</div>
+</div>
+<div id="ref-Twyman-Saint2015-radiation-checkpoint" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">C. Twyman-Saint Victor, A. J. Rech, A. Maity, R. Rengan, K. E. Pauken, E. Stelekati, J. L. Benci, B. Xu, H. Dada, P. M. Odorizzi, R. S. Herati, K. D. Mansfield, D. Patsch, R. K. Amaravadi, L. M. Schuchter, H. Ishwaran, R. Mick, D. A. Pryma, X. Xu, M. D. Feldman, T. C. Gangadhar, S. M. Hahn, E. J. Wherry, R. H. Vonderheide, A. J. Minn, <a href="10.1038/nature14292
+http://www.nature.com/nature/journal/v520/n7547/abs/nature14292.html#supplementary-information">Radiation and dual checkpoint blockade activate non-redundant immune mechanisms in cancer</a>. <em>Nature</em>. <strong>520</strong>, 373–377 (2015).</div>
+</div>
+<div id="ref-Inouye1994-GFP-redox" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">S. Inouye, F. I. Tsuji, <a href="https://doi.org/10.1016/0014-5793(94)00859-0">Evidence for redox forms of the aequorea green fluorescent protein</a>. <em>FEBS Letters</em>. <strong>351</strong>, 211–214 (1994).</div>
+</div>
+<div id="ref-Tsien1998-GFP" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">R. Y. Tsien, <a href="https://doi.org/10.1146/annurev.biochem.67.1.509">THE GREEN FLUORESCENT PROTEIN</a>. <em>Annual Review of Biochemistry</em>. <strong>67</strong>, 509–544 (1998).</div>
+</div>
+<div id="ref-Meier2019-peroxide-sensors" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">J. Meier, E. M Hofferber, J. A Stapleton, N. M Iverson, Hydrogen peroxide sensors for biomedical applications. <em>Chemosensors</em>. <strong>7</strong> (2019), doi:<a href="https://doi.org/10.3390/chemosensors7040064">10.3390/chemosensors7040064</a>.</div>
+</div>
+</div>
+</section>
+<section id="p.s.-writing-with-quarto" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="p.s.-writing-with-quarto">P.S. Writing with Quarto</h2>
+<p>This was the first time I used <a href="https://quarto.org/">Quarto</a> for scholarly-ish writing. My proposal was a Word doc with Mendeley citations. I didn’t feel like re-acquanting myself with Mendeley at this time, so I copied the bibliography into <a href="https://rintze.zelle.me/ref-extractor/">this reference extractor tool</a> to produce a <code>.bib</code> file. The rest was easy, thanks to <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">Quarto/Pandoc</a>. But wait, that’s not all! Once your bibliography is in place, <a href="https://quarto.org/docs/tools/vscode.html">Quarto’s VSCode plugin</a> enables you to look up citations as you write (Fig. 2).</p>
+
+
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig2-quarto-cite-as-you-write.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 2</figcaption><p></p>
+</figure>
+</div>
+</div></div></section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="liquidcarbon/blog" data-repo-id="R_kgDOJGkWMQ" data-category="General" data-category-id="DIC_kwDOJGkWMc4CU2pN" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="dark" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
