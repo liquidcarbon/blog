@@ -2,7 +2,7 @@
 title: "Aqueous chemistry and applications of boron hydrides"
 subtitle: Unpublished academic proposals, part 1
 description: |
-  Preparation of water-stable amine–borane (RNH2•BH3)
+  Preparation of water-stable amine–borane (RNH~2~•BH~3~)
   derivatives of peptides and proteins.  Written by me in October 2015.
 categories:
   - chemistry
@@ -16,7 +16,7 @@ comments:
     theme: dark
 date: "2023-05-03T11:00"
 date-format: "ddd, MMM D YYYY HH:mm" 
-image: "DSC.png"
+image: "resprop1-amine-borane.png"
 image-alt: "Amine-Boranes"
 toc: true
 bibliography: references.bib
@@ -42,7 +42,19 @@ Rapid decomposition of NaBH~4~ under physiological conditions is accompanied by 
 Potential funding sources: NIH (NCI, NIBIB, NIGMS); NSF (MCB, MSN, SYN); DoD; Bill and Melinda Gates Foundation (NaBH~4~ vaccine is a cheap, broadly applicable intervention).
 
 
+## Comment
+
+This was the more outlandish of my proposals.  It wasn't based on my previous work, just on long-time fascination with boron chemistry, and some experiments with reversible reduction of GFP with borohydride[@Inouye1994-GFP-redox; @Tsien1998-GFP], which I played with for a bit because purified fluorescent proteins were around in Roger's lab!  Roger himself was quite interested in hydrogen peroxide sensors based on boronic acids, but they couldn't compete on rates with HyPer and similar protein-based sensors.[@Meier2019-peroxide-sensors]
+
 ## References
 
 ::: {#refs}
+:::
+
+## P.S. Writing with Quarto
+
+This was the first time I used [Quarto](https://quarto.org/) for scholarly-ish writing.  My proposal was a Word doc with Mendeley citations.  I didn't feel like re-acquanting myself with Mendeley at this time, so I copied the bibliography into [this reference extractor tool](https://rintze.zelle.me/ref-extractor/) to produce a `.bib` file.  The rest was easy, thanks to [Quarto/Pandoc](https://quarto.org/docs/authoring/footnotes-and-citations.html).  But wait, that's not all!  Once your bibliography is in place, [Quarto's VSCode plugin](https://quarto.org/docs/tools/vscode.html) enables you to look up citations as you write (Fig. 2).  You can see the final file structure for this post [here](https://github.com/liquidcarbon/blog/tree/main/posts/23/academic-proposals-part1-amine-boranes).
+
+:::
+![Fig. 2.  Cite as you go with Quarto in VSCode.](fig2-quarto-cite-as-you-write.png)
 :::
