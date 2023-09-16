@@ -56,7 +56,7 @@ def to_html(
     html_table += f"{_indent}</tr>\n"
     html_table += f"{_indent}</thead>\n"
     
-    for row in results:
+    for row in self.fetchall():
         html_table += f"{_indent}<tr>\n"
         for value in row:
             html_table += f"{_indent}{_indent}<td>{str(value)}</td>\n"
