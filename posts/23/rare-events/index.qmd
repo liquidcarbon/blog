@@ -1,8 +1,6 @@
 ---
-title: "Black Cats, Blue Birds"
+title: Black Cats, Blue Birds
 subtitle: Chasing down rare beasts
-description: |
-  Observing and fixing rare events is difficult to do reliably.
 categories:
   - Data Science
   - Statistics
@@ -13,12 +11,13 @@ comments:
     mapping: pathname
     repo: liquidcarbon/blog
     theme: dark
-date: "2023-06-12T00:00"
-date-format: "ddd, MMM D YYYY HH:mm" 
-image: "Poisson-Raindrops.png"
-image-alt: ""
+date: 2023-06-12T00:00
+date-format: ddd, MMM D YYYY HH:mm
+image: Poisson-Raindrops.png
+image-alt: ''
 toc: true
 jupyter: python3
+description: Observing and fixing rare events is difficult to do reliably.
 ---
 
 # Rare Events
@@ -107,4 +106,4 @@ for a in range(5):
 
 https://gist.github.com/liquidcarbon/e4db5ab305c57a542136499871f7773d
 
-https://www.linkedin.com/posts/alekis_html5-poisson-statistics-activity-7087531310398767104-zdw3
+https://www.linkedin.com/posts/alekis\_html5-poisson-statistics-activity-7087531310398767104-zdw3

@@ -1,8 +1,6 @@
 ---
 title: Elements of Surprise
 subtitle: And some polypropylene
-description: |
-  Something else to get started.
 categories:
   - Hello, World
   - Tables
@@ -14,17 +12,19 @@ comments:
     mapping: pathname
     repo: liquidcarbon/blog
     theme: dark
-date: "02/03/2022"
+date: 02/03/2022
 execute:
   cache: false
   freeze: true
 image: elem-of-sur.png
-image-alt: "Elements of Sur"
+image-alt: Elements of Sur
 toc: true
 jupyter: python3
+description: Something else to get started.
 ---
 
 # Element of Surprise
+
 A surprising periodic table of elements.
 
 ```{python}
@@ -120,17 +120,11 @@ def elements_of_surprise():
 elements_of_surprise()
 ```
 
----
+***
 
 ## Polypropylene
 
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
-CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~CH(CH~3~)CH~2~
+CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~ CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~ CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~ CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~ CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~ CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~ CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~CH(CH~~3~~)CH~~2~~
 
 ## Polymerplotlib
 

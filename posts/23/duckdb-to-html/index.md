@@ -1,8 +1,6 @@
 ---
 title: DuckDB to HTML  (plain .md to compare with .qmd)
 subtitle: Directly convert DuckDB result set to HTML table string
-description: |
-  Useful to write HTML tables without pandas
 categories:
   - Databases
   - HTML
@@ -13,17 +11,18 @@ comments:
     mapping: pathname
     repo: liquidcarbon/blog
     theme: dark
-date: "2023-09-16T00:00"
-date-format: "ddd, MMM D YYYY HH:mm" 
-image: "DuckDB-to-HTML.png"
-image-alt: ""
+date: 2023-09-16T00:00
+date-format: ddd, MMM D YYYY HH:mm
+image: DuckDB-to-HTML.png
+image-alt: ''
 toc: true
 jupyter: python3
+description: Useful to write HTML tables without pandas
 ---
 
 # Write HTML tables from DuckDB directly
 
-Feature request: https://github.com/duckdb/duckdb/discussions/8961 
+Feature request: https://github.com/duckdb/duckdb/discussions/8961
 
 ## Monkey Patching `DuckDBPyConnection`
 

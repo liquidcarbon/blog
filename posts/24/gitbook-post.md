@@ -1,23 +1,16 @@
 ---
-title: Polyethylene
-subtitle: And a small periodic table
-categories:
-  - Hello, World
-  - Tables
-author: LiqC
-date: 02/02/2022
-image: >-
-  https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ethylene-CRC-MW-dimensions-2D.png/320px-Ethylene-CRC-MW-dimensions-2D.png
-image-alt: Not an image
-toc: true
-description: Something to get started.
+description: Blog post from Gitbook
 ---
 
-# Polyethylene
+# gitbook-post
+
+<figure><img src="https://images.unsplash.com/photo-1657070174397-569b53c68e29?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDQ5MTMzMTl8&#x26;ixlib=rb-4.0.3&#x26;q=85" alt="" width="375"><figcaption><p>Winter Sun</p></figcaption></figure>
+
+## Polyethylene
 
 CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~ CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~ CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~ CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~ CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~ CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~ CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~CH~~2~~
 
-## Small but periodic
+### Small but periodic
 
 ```markdown
 | Period  | Group 1 | Group 2 | Group 17 | Group 18 |
